@@ -1,0 +1,13 @@
+site_name: Проектирование и дизайн информационных систем
+theme:
+  name: 'material'
+nav:
+    - Главная: index.md
+    - Лекции:
+        - Семестр 5:
+            - '1. Основные понятия и определения ИС': 'writing-your-docs.md'
+            - 'Styling your docs': 'styling-your-docs.md'
+    - Практические:
+        - Семестр 5:
+            - 'Writing your docs': 'writing-your-docs.md'
+            - 'Styling your docs': 'styling-your-docs.md'
