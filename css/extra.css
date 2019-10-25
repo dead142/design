@@ -5,7 +5,12 @@
 img {
     padding: 10px;
 }
+.small_table{
+    font-size: 7px;
 
-.md-content {
-        margin-right: 0;
-    }
+}
+.md-typeset table:not([class]) td{
+    margin: 0;
+    padding: 3px;
+
+}
