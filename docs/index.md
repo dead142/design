@@ -1,19 +1,23 @@
-# Welcome to MkDocs
+# Проектирование информационных систем
+## МДК 05.01, 05.02
 
-![Screenshot](img/logo.png)
+<img src="img/logo.png " alt="drawing" width="400px" class="center"/>
+ 
+Добро пожаловать!)
+Курс ориентирован на практическое изучение процесса разработки проектов.
+Предполагаемый стек технологий - yii2, mysql, jq. 
+Однако вы можете использовать любые другие языки и фреймворки (django, symfony ...).
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+Для создание каждой лекции и задания затрачивается много времени, так
+как лекции - это выдержки основной информации из зарубежных и российских 
+источников, которые требуют перевода. 
 
-## Commands
+Я надеюсь, что вам понравится такой формат.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+В целом, курс включает несколько составляющих:
 
-## Project layout
+1. лекции с теоретиечским материалом;
+2. практические задания двух видов: лабораторные для обучающихся и практические работы для всех;
+3. доплнительная информация - гайды по стилю кода, оформлению работ, работе с git и другие
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<iframe class="center" src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82&targets-hint=&default-sum=&button-text=13&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=4100189452196" width="100%" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
