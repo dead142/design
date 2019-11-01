@@ -13,6 +13,7 @@ nav:
         - Семестр 5:
             - '1. Use-Case диаграмма': '1_lab/lab.md'
             - '2. Установка yii2-user, yii2-rbac': '2_lab/lab.md'
+            - '3. Gii, поведения и права доступа': '3_lab/lab.md'
 shortcuts:
   help: 191    # ?
   next: 78     # n
