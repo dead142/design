@@ -345,6 +345,13 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    Критерии оценки
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     Источники
   </a>
   
@@ -358,6 +365,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../3_lab/lab/" title="3. Gii, поведения и права доступа" class="md-nav__link">
+      3. Gii, поведения и права доступа
+    </a>
   </li>
 
         
@@ -400,6 +419,13 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    Критерии оценки
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     Источники
   </a>
   
@@ -423,19 +449,61 @@
                 
                 
                 <h1 id="yii2-user-yii2-rbac">Установка yii2-user, yii2-rbac</h1>
-<p><strong>Цель работы:</strong>  </p>
+<p><strong>Цель работы:</strong> знакомство c авторизацией в yii2, 
+фильтрами контроля доступа  и контролем доступа на основе ролей</p>
 <p><strong>Задачи:</strong></p>
 <ol>
-<li></li>
-<li></li>
-<li>разработать диаграмму использования на основе построенной таблицы</li>
+<li>установить yii2-basic из репозитория<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>;</li>
+<li>уставновить расширение dektrium/yii2-user<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>;</li>
+<li>выполнить конфигурацию расширения dektrium/yii2-user; </li>
+<li>заменить пункты меню в стандартном шаблоне yii2-basic на ссылки dektrium/yii2-user; </li>
+<li>установить расширение dektrium/yii2-rbac<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>;</li>
+<li>выполнить конфигурацию расширения dektrium/yii2-rbac;</li>
+<li>создать роль 'admin';</li>
+<li>в конфигурации указать, что пользователь с ролью 'admin' является
+   администратором модуля (<em>обратите внимание, что именно с ролью, а не
+   с логином пользователя!</em>);</li>
+<li>проверить работоспособность расширения dektrium/yii2-rbac;</li>
+<li>создать пользователя с логином 'admin' и паролем 'admin', который
+    будет администратором ресурса;</li>
+<li>создать пользователя с логином 'user' и паролем 'user', который
+    будет авторизированным пользователем ресурса;</li>
+<li>назначить пользователю 'admin' роль 'admin';</li>
+<li>создать репозиторий на <a href="github">https://github.com/</a>;</li>
+<li>зафиксировать изменнени (commit) с сообщением "lab1 done!" и сделать
+    push в репозиторий.</li>
 </ol>
 <h2 id="_1">Требования к отчету</h2>
 <ol>
-<li>оформление согласно требованиям образовательного учреждения или ГОСТу (ГОСТ 7.32-2001);</li>
+<li>Оформление согласно требованиям образовательного учреждения или ГОСТу
+   (ГОСТ 7.32-2001);</li>
 <li>указать цель и задачи лабораторной работы;</li>
+<li>скриншоты конфигурации модулей dektrium/yii2-rbac и dektrium/yii2-user;</li>
+<li>ссылка на репозиторий</li>
 </ol>
-<h2 id="_2">Источники</h2>
+<h2 id="_2">Критерии оценки</h2>
+<ol>
+<li>Срок выполнения не должен быть больше deadline;</li>
+<li>код отформатирован и присутвуют комментарии;</li>
+<li>проект работает и не имеет ошибок;</li>
+<li>количество коммитов равно одному;</li>
+<li>отчет оформлен в соответствии с требованиями.</li>
+</ol>
+<h2 id="_3">Источники</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="Установка yii2">https://www.yiiframework.com/doc/guide/2.0/ru/start-installation</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="dektrium/yii2-user">https://github.com/dektrium/yii2-user</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="dektrium/yii2-rbac">https://github.com/dektrium/yii2-rbac</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 
@@ -470,6 +538,20 @@
             </div>
           </a>
         
+        
+          <a href="../../3_lab/lab/" title="3. Gii, поведения и права доступа" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                3. Gii, поведения и права доступа
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
