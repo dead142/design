@@ -36,7 +36,7 @@
     
     
       
-        <title>1. ПР Ситаксис, математические опреации, типы данных - Проектирование и дизайн информационных систем</title>
+        <title>6. Инкапсуляция, наследование, полиморфизм - Проектирование и дизайн информационных систем</title>
       
     
     
@@ -103,7 +103,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                1. ПР Ситаксис, математические опреации, типы данных
+                6. Инкапсуляция, наследование, полиморфизм
               
             </span>
           
@@ -224,10 +224,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1" checked>
     
     <label class="md-nav__link" for="nav-2-1-1">
       Лекции
@@ -303,11 +305,63 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../6_lecture/lecture/" title="6. Инкапсуляция, наследование, полиморфизм" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        6. Инкапсуляция, наследование, полиморфизм
+      </label>
+    
+    <a href="./" title="6. Инкапсуляция, наследование, полиморфизм" class="md-nav__link md-nav__link--active">
       6. Инкапсуляция, наследование, полиморфизм
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Инкапсуляция
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Наследование
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Полиморфизм
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -332,12 +386,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-2" type="checkbox" id="nav-2-1-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-2" type="checkbox" id="nav-2-1-2">
     
     <label class="md-nav__link" for="nav-2-1-2">
       Практические и лабораторные
@@ -353,49 +405,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        1. ПР Ситаксис, математические опреации, типы данных
-      </label>
-    
-    <a href="./" title="1. ПР Ситаксис, математические опреации, типы данных" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../1_lab/lab/" title="1. ПР Ситаксис, математические опреации, типы данных" class="md-nav__link">
       1. ПР Ситаксис, математические опреации, типы данных
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Шкала оценивания и критерии оценки:
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -724,7 +738,21 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    Шкала оценивания и критерии оценки:
+    Инкапсуляция
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Наследование
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Полиморфизм
   </a>
   
 </li>
@@ -746,46 +774,104 @@
               
                 
                 
-                <h1 id="_1">ЗАДАЧА</h1>
-<p><strong>По теме: «Синтаксис языка программирования»</strong></p>
-<p><strong>Цель работы:</strong> закрепление практических навыков работы с синтаксисом языка программирования</p>
-<p><strong>Формируемые компетенции:</strong> ПК 5.4 «Производить разработку модулей информационной системы в соответствии с техническим заданием»</p>
-<p><strong>Задача 1.</strong> Реализовать сложение двух переменных;</p>
-<p><strong>Задача 2.</strong> Реализовать вычитание двух переменных;</p>
-<p><strong>Задача 3.</strong> Реализовать умножение трех переменных;</p>
-<p><strong>Задача 4.</strong> Вычислить корень переменной;</p>
-<p><strong>Задача 5.</strong> Выполнить операции «И», «ИЛИ» для двух переменных булевых типов;</p>
-<p><strong>Задача 6.</strong> Создать массив, содержащий цифры от 1 до 10;</p>
-<p><strong>Задача 7.</strong> Создать ассоциативный массив из двух элементов;</p>
-<p><strong>Задача 8.</strong> Создать ассоциативный массив из двух элементов;</p>
-<p><strong>Задача 8.</strong> Используя функцию explode() и substr() написать выражение для преобразование строки «Петров Петр Петрович» в строку вида «Петров П. П.». Для соединения строк используется символ конкатенации «.».</p>
-<h2 id="_2">Шкала оценивания и критерии оценки:</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Оценка</th>
-<th>Критерии оценивания выполнения задач (домашнего задания)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">5</td>
-<td>Ход решения верный, все его шаги выполнены правильно, получен верный ответ, выполнены все задачи.</td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td>Ход решения верный, все его шаги выполнены правильно, но допущена вычислительная ошибка или выполнено менее 70% задач</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td>Ход решения верный, но решено менее 50% задач</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td>Другие случаи, не соответствующие указанным критериям</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="_1">Инкапсуляция, наследование, полиморфизм.</h1>
+<h2 id="_2">Инкапсуляция</h2>
+<p><strong>Инкапсуляция</strong> — это свойств о системы, позволяющее объединить данные и методы, работающие с ними, в классе, и скрыть детали реализации от пользователя.</p>
+<p>Предположим, у нас имеется некий класс <code>Vehicle</code>, моделирующий устройство и поведение некой простейшей технической единицы, скажем, в компьютерной игре.</p>
+<div class="codehilite"><pre><span></span><span class="x">Class Vehicle{</span>
+<span class="x">   // Запас “жизней” юнита</span>
+<span class="x">   Public $hits;</span>
+<span class="x">   // Метод, отвечающий за получение юнитом повреждений в игре... </span>
+<span class="x">   public function getDamage($damage){</span>
+<span class="x">            $this-&gt;hits -= $damage;</span>
+<span class="x">          }</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<p>В этом простом примере в классе, моделирующем объект, мы описали некие данные - запас “жизней” игрового юнита - 
+<code>$hits</code>, а также запрограммировали реализацию обработки этих данных - 
+метод, получения юнитом повреждений - <code>getDamage()</code>. Таким образом, говорят,
+ что данные и механизмы их обработки/модификации инкапсулированы в классе <code>Vehicle</code>.</p>
+<h2 id="_3">Наследование</h2>
+<p><strong>Наследование</strong> — это свойство системы, позволяющее описать новый класс на основе уже существующего с частично или полностью заимствующейся функциональностью. Класс, от которого производится наследование, называется базовым, родительским или суперклассом. Новый класс — потомком, наследником, дочерним или производным классом.</p>
+<p>Продолжим наш пример с описанием объектов некоторой компьютерной игры.
+ Предположим, у нас есть также класс объектов <code>Tank</code>, который логически также принадлежит к технике.
+  Вместо того, чтобы описывать Tank как полностью отдельный и самостоятельный класс с дублированием всех тех 
+  же данных и методов, что есть у любой техники (Vehicle) в игре, можно описать класс Tank, 
+  как дочерний класс от класса Vehicle, дополнив его только свойствами и методами, которые свойственны 
+  именно классу <code>Tank</code>:</p>
+<div class="codehilite"><pre><span></span><span class="x">...</span>
+
+<span class="x">class Tank extends Vehicle {</span>
+
+<span class="x">// Броня</span>
+<span class="x">public $armor;</span>
+
+<span class="x">// Окопаться </span>
+<span class="x">public function trench(){</span>
+<span class="x">// Реализация...</span>
+<span class="x">}</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<p>Таким образом, класс <code>Tank</code> полностью наследует разрешенный* набор полей и методов родительского 
+класса <code>Vehicle</code> вместе с реализацией, без необходимости определять их в самом классе <code>Tank</code>, 
+т.к. их реализация вполне подходит и для данного класса.
+ Но на практике часто возникает потребность изменить поведение родительского класса в классах - потомках,
+  и тут в игру вступает вид следующего принципа - полиморфизма наследования.</p>
+<h2 id="_4">Полиморфизм</h2>
+<p><strong>Полиморфизм</strong> (одно из определений) - (многоформенность) является следствием идеи наследования. В общих словах, полиморфность класса — это свойство базового класса использовать функции производных классов, даже если на момент определения еще неизвестно, какой именно класс будет включать его в качестве базового и, тем самым, становиться от него производным.</p>
+<p>Рассмотрим следующий вид полиморфизма:</p>
+<p>Предположим, каждый юнит в нашей игре также имеет название, которое хранится в поле <code>$name</code>;</p>
+<div class="codehilite"><pre><span></span><span class="x">classVehicle{</span>
+<span class="x">   // Название</span>
+<span class="x">   public $name;</span>
+
+<span class="x">   ...</span>
+
+<span class="x">   // Метод, возвращающий строку с названием юнита. </span>
+<span class="x">   public function getIntroductionPhrase(){</span>
+<span class="x">return “I’m abstract unit ” . $this-&gt;name;</span>
+<span class="x">   }</span>
+
+<span class="x">          // Представить юнить:</span>
+<span class="x">          public function introduce(){</span>
+<span class="x">echo $this-&gt;getIntroductionPhrase();</span>
+<span class="x">          }</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<p>Базовый класс дополним двумя методами. Один из которых возвращает строку, представляющую данный юнит. Второй - просто выводит эту строку в код страницы.</p>
+<p>Далее переопределим метод <code>getIntroductionPhrase()</code> в классе <code>Tank</code>, который наследует данный класс.</p>
+<div class="codehilite"><pre><span></span><span class="x">class Tank extends Vehicle {</span>
+
+<span class="x">          ...</span>
+
+<span class="x">          // Метод, возвращающий строку с названием юнита. </span>
+<span class="x">   public function getIntroductionPhrase(){</span>
+<span class="x">             return “I’m Tank ” . $this-&gt;name . “. Awaiting for your orders.”;</span>
+<span class="x">          }</span>
+
+<span class="x">}</span>
+</pre></div>
+
+
+<p>Таким образом, если мы создадим экземпляр класса <code>Tank</code> и вызовем
+ унаследованный метод <code>introduce()</code>, то в нём в итоге будет вызван не унаследованный метод
+  <code>getIntroductionPhrase()</code>, а тот, который определён именно в классе <code>Tank</code>:</p>
+<div class="codehilite"><pre><span></span><span class="x">...</span>
+<span class="x">$tank1 = new Tank();</span>
+<span class="x">$tank1-&gt;name = “T-82”;</span>
+<span class="x">$tank1-&gt;introduce();</span>
+<span class="x">...</span>
+</pre></div>
+
+
+<p>Вывод:</p>
+<p><code>I’m Tank T-82. Awaiting for your orders.</code></p>
                 
                   
                 
@@ -807,7 +893,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../7_lecture/lecture/" title="7. Абстрактные классы. Интерфейсы" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../5_lecture/lecture/" title="5. Конструкторы и деструкторы" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -816,19 +902,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                7. Абстрактные классы. Интерфейсы
+                5. Конструкторы и деструкторы
               </span>
             </div>
           </a>
         
         
-          <a href="../../2_lab/lab/" title="2. ПР Работа со строками" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../7_lecture/lecture/" title="7. Абстрактные классы. Интерфейсы" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                2. ПР Работа со строками
+                7. Абстрактные классы. Интерфейсы
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

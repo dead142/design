@@ -36,7 +36,7 @@
     
     
       
-        <title>1. ПР Ситаксис, математические опреации, типы данных - Проектирование и дизайн информационных систем</title>
+        <title>5. Конструкторы и деструкторы - Проектирование и дизайн информационных систем</title>
       
     
     
@@ -103,7 +103,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                1. ПР Ситаксис, математические опреации, типы данных
+                5. Конструкторы и деструкторы
               
             </span>
           
@@ -224,10 +224,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1" checked>
     
     <label class="md-nav__link" for="nav-2-1-1">
       Лекции
@@ -291,11 +293,89 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../5_lecture/lecture/" title="5. Конструкторы и деструкторы" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        5. Конструкторы и деструкторы
+      </label>
+    
+    <a href="./" title="5. Конструкторы и деструкторы" class="md-nav__link md-nav__link--active">
       5. Конструкторы и деструкторы
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Конструктор
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    Пример #1 Использование унифицированных конструкторов
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    Пример #2 Конструкторы в классах, находящихся в пространстве имен
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Деструкторы
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    Пример #3 Пример использования деструктора
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -332,12 +412,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-2" type="checkbox" id="nav-2-1-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-2" type="checkbox" id="nav-2-1-2">
     
     <label class="md-nav__link" for="nav-2-1-2">
       Практические и лабораторные
@@ -353,49 +431,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        1. ПР Ситаксис, математические опреации, типы данных
-      </label>
-    
-    <a href="./" title="1. ПР Ситаксис, математические опреации, типы данных" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../1_lab/lab/" title="1. ПР Ситаксис, математические опреации, типы данных" class="md-nav__link">
       1. ПР Ситаксис, математические опреации, типы данных
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Шкала оценивания и критерии оценки:
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -724,8 +764,48 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    Шкала оценивания и критерии оценки:
+    Конструктор
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    Пример #1 Использование унифицированных конструкторов
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    Пример #2 Конструкторы в классах, находящихся в пространстве имен
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Деструкторы
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    Пример #3 Пример использования деструктора
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -746,46 +826,103 @@
               
                 
                 
-                <h1 id="_1">ЗАДАЧА</h1>
-<p><strong>По теме: «Синтаксис языка программирования»</strong></p>
-<p><strong>Цель работы:</strong> закрепление практических навыков работы с синтаксисом языка программирования</p>
-<p><strong>Формируемые компетенции:</strong> ПК 5.4 «Производить разработку модулей информационной системы в соответствии с техническим заданием»</p>
-<p><strong>Задача 1.</strong> Реализовать сложение двух переменных;</p>
-<p><strong>Задача 2.</strong> Реализовать вычитание двух переменных;</p>
-<p><strong>Задача 3.</strong> Реализовать умножение трех переменных;</p>
-<p><strong>Задача 4.</strong> Вычислить корень переменной;</p>
-<p><strong>Задача 5.</strong> Выполнить операции «И», «ИЛИ» для двух переменных булевых типов;</p>
-<p><strong>Задача 6.</strong> Создать массив, содержащий цифры от 1 до 10;</p>
-<p><strong>Задача 7.</strong> Создать ассоциативный массив из двух элементов;</p>
-<p><strong>Задача 8.</strong> Создать ассоциативный массив из двух элементов;</p>
-<p><strong>Задача 8.</strong> Используя функцию explode() и substr() написать выражение для преобразование строки «Петров Петр Петрович» в строку вида «Петров П. П.». Для соединения строк используется символ конкатенации «.».</p>
-<h2 id="_2">Шкала оценивания и критерии оценки:</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Оценка</th>
-<th>Критерии оценивания выполнения задач (домашнего задания)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">5</td>
-<td>Ход решения верный, все его шаги выполнены правильно, получен верный ответ, выполнены все задачи.</td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td>Ход решения верный, все его шаги выполнены правильно, но допущена вычислительная ошибка или выполнено менее 70% задач</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td>Ход решения верный, но решено менее 50% задач</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td>Другие случаи, не соответствующие указанным критериям</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="_1">Конструктор и деструктор.</h1>
+<h2 id="_2">Конструктор</h2>
+<p><code>void __construct ([ mixed $args = "" [, $... ]] )</code></p>
+<p>PHP позволяет объявлять методы-конструкторы. Они автоматически исполняются при создании класса и служат для задания начальных значений свойствам класса. Классы, в которых объявлен метод-конструктор, будут вызывать этот метод при каждом создании нового объекта, так что это может оказаться полезным, например, для инициализации какого-либо состояния объекта перед его использованием.</p>
+<blockquote>
+<p><strong>Замечание:</strong> Конструкторы в классах-родителях не вызываются автоматически, если класс-потомок 
+определяет собственный конструктор. Чтобы вызвать конструктор, объявленный в
+родительском классе, следует обратиться к методу <code>parent::__construct()</code>
+внутри конструктора класса-потомка. Если в классе-потомке не определе
+конструктор, то он может наследоваться от родительского класса как обычный метод 
+(если он не определен как приватный).
+</p>
+</blockquote>
+<h3 id="1">Пример #1 Использование унифицированных конструкторов</h3>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">BaseClass</span> <span class="p">{</span>
+   <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span> <span class="p">{</span>
+       <span class="k">print</span> <span class="s2">&quot;Конструктор класса BaseClass</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">SubClass</span> <span class="k">extends</span> <span class="nx">BaseClass</span> <span class="p">{</span>
+   <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span> <span class="p">{</span>
+       <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
+       <span class="k">print</span> <span class="s2">&quot;Конструктор класса SubClass</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">OtherSubClass</span> <span class="k">extends</span> <span class="nx">BaseClass</span> <span class="p">{</span>
+    <span class="c1">// inherits BaseClass&#39;s constructor</span>
+<span class="p">}</span>
+
+<span class="c1">// In BaseClass constructor</span>
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BaseClass</span><span class="p">();</span>
+
+<span class="c1">// In BaseClass constructor</span>
+<span class="c1">// In SubClass constructor</span>
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SubClass</span><span class="p">();</span>
+
+<span class="c1">// In BaseClass constructor</span>
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">OtherSubClass</span><span class="p">();</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<p>В целях обратной совместимости, если PHP не может обнаружить объявленный метод <code>__construct()</code> и этот метод 
+не наследуется от родительских классов, то вызов конструктора произойдет по устаревшей схеме, через обращение к
+ методу, имя которого соответствует имени класса. Может возникнуть только одна проблема совместимости
+  старого кода, если в нём присутствуют классы с методами <code>__construct()</code>, использующиеся для других целей.</p>
+<p>В отличие от других методов, PHP не будет генерировать ошибку уровня <code>E_STRICT</code>, если <code>__construct()</code>
+ будет перекрыт методом с другими параметрами, отличными от тех, которые находятся в родительском <code>__construct()</code>.</p>
+<p>Начиная с версии PHP 5.3.3, методы с именами, совпадающими с последним элементом имени класса, находящимся в пространстве имен, больше не будут считаться конструкторами. Это изменение не влияет на классы, не находящиеся в пространстве имен.</p>
+<h3 id="2">Пример #2 Конструкторы в классах, находящихся в пространстве имен</h3>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">namespace</span> <span class="nx">Foo</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">Bar</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">Bar</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// конструктор в версиях PHP 5.3.0-5.3.2</span>
+        <span class="c1">// обычный метод, начиная с версии PHP 5.3.3</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<h2 id="_3">Деструкторы</h2>
+<p><code>void __destruct ( void )</code>
+PHP предоставляет концепцию деструкторов, сходную с теми, что применяются в других ОО языках, таких, как C++. Деструктор будет вызван при освобождении всех ссылок на определенный объект или при завершении скрипта (порядок выполнения деструкторов не гарантируется). </p>
+<h3 id="3">Пример #3 Пример использования деструктора</h3>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">MyDestructableClass</span> <span class="p">{</span>
+   <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span> <span class="p">{</span>
+       <span class="k">print</span> <span class="s2">&quot;Конструктор</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+       <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="s2">&quot;MyDestructableClass&quot;</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="k">function</span> <span class="fm">__destruct</span><span class="p">()</span> <span class="p">{</span>
+       <span class="k">print</span> <span class="s2">&quot;Уничтожается &quot;</span> <span class="o">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyDestructableClass</span><span class="p">();</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<p>Как и в случае с конструкторами, деструкторы, объявленные в родительском классе, не будут
+ вызваны автоматически. Для вызова деструктора, объявленном в классе-родителе, следует
+  обратиться к методу <code>parent::__destruct()</code> в теле деструктора-потомка. Также класс-потомок может унаследовать деструктор из родительского класса, если он не определен в нем.</p>
+<p>Деструктор будет вызван даже в том случае, если скрипт был остановлен с помощью функции <code>exit()</code>. 
+Вызов <code>exit()</code> в деструкторе предотвратит запуск всех последующих функций завершения.</p>
+<blockquote>
+<p><strong>Замечание:</strong>
+Деструкторы, вызываемые при завершении скрипта, вызываются после отправки HTTP-заголовков. Рабочая директория во время фазы завершения скрипта может отличаться в некоторых SAPI (например, в Apache).</p>
+<p><strong>Замечание:</strong>
+Попытка бросить исключение в деструкторе (вызванного во время завершения скрипта) влечет за собой фатальную ошибку.</p>
+</blockquote>
                 
                   
                 
@@ -807,7 +944,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../7_lecture/lecture/" title="7. Абстрактные классы. Интерфейсы" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../4_lecture/lecture/" title="4. Объекты и классы в ООП" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -816,19 +953,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                7. Абстрактные классы. Интерфейсы
+                4. Объекты и классы в ООП
               </span>
             </div>
           </a>
         
         
-          <a href="../../2_lab/lab/" title="2. ПР Работа со строками" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../6_lecture/lecture/" title="6. Инкапсуляция, наследование, полиморфизм" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                2. ПР Работа со строками
+                6. Инкапсуляция, наследование, полиморфизм
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
