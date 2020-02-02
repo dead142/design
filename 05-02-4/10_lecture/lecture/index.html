@@ -36,7 +36,7 @@
     
     
       
-        <title>7. Абстрактные классы. Интерфейсы - Проектирование и дизайн информационных систем</title>
+        <title>10. Оформление кода - PSR - Проектирование и дизайн информационных систем</title>
       
     
     
@@ -77,7 +77,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#_1" tabindex="1" class="md-skip">
+      <a href="#psr-1" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -103,7 +103,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                7. Абстрактные классы. Интерфейсы
+                10. Оформление кода - PSR
               
             </span>
           
@@ -317,6 +317,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../../7_lecture/lecture/" title="7. Абстрактные классы. Интерфейсы" class="md-nav__link">
+      7. Абстрактные классы. Интерфейсы
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -324,38 +336,47 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        7. Абстрактные классы. Интерфейсы
+        10. Оформление кода - PSR
       </label>
     
-    <a href="./" title="7. Абстрактные классы. Интерфейсы" class="md-nav__link md-nav__link--active">
-      7. Абстрактные классы. Интерфейсы
+    <a href="./" title="10. Оформление кода - PSR" class="md-nav__link md-nav__link--active">
+      10. Оформление кода - PSR
     </a>
     
       
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Абстрактные классы
+  <a href="#psr-1" class="md-nav__link">
+    Стандарт PSR-1. Основной стандарт кодирования
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    Интерфейсы
+  <a href="#psr-2" class="md-nav__link">
+    PSR-2. Стиль кодирования
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Классы
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -367,18 +388,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../10_lecture/lecture/" title="10. Оформление кода - PSR" class="md-nav__link">
-      10. Оформление кода - PSR
-    </a>
   </li>
 
         
@@ -843,23 +852,34 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Абстрактные классы
+  <a href="#psr-1" class="md-nav__link">
+    Стандарт PSR-1. Основной стандарт кодирования
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    Интерфейсы
+  <a href="#psr-2" class="md-nav__link">
+    PSR-2. Стиль кодирования
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Классы
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -880,69 +900,255 @@
               
                 
                 
-                <h1 id="_1">Абстрактные классы. Интерфейсы.</h1>
-<h2 id="_2">Абстрактные классы</h2>
-<p>Язык PHP поддерживает абстрактные классы и методы, для которых нельзя создавать объекты — экземпляры класса. Абстрактные классы и методы не включают в себя какие-то функциональные средства и служат лишь для описательных целей. Однако абстрактные классы могут наследоваться, и их используют при создании сложных иерархических конструкций из классов. В этом случае абстрактные методы перекрываются дочерними классами, получая конкретное функциональное наполнение. Класс, в котором объявлен хотя бы один абстрактный метод, должен также быть объявлен абстрактным. </p>
-<p>Для объявления абстрактного класса или метода используют ключевое слово abstract:</p>
-<div class="codehilite"><pre><span></span><span class="x">abstract class MyAbstractClass { </span>
-<span class="x">abstract protected function getValue(); </span>
-<span class="x">public function print() { </span>
-<span class="x">print $this-&gt;getValue(); </span>
-<span class="x">} </span>
-<span class="x">} </span>
-<span class="x">class MyClass1 extends MyAbstractClass { </span>
-<span class="x">protected function getValue() { </span>
-<span class="x">return &quot;MyClass1&quot;; </span>
-<span class="x">} </span>
-<span class="x">} </span>
-<span class="x">class MyClass2 extends MyAbstractClass { </span>
-<span class="x">protected function getValue() {</span>
-<span class="x">return &quot;MyClass2&quot;; </span>
+                  <h1>10. Оформление кода - PSR</h1>
+                
+                <h2 id="psr-1">Стандарт PSR-1. Основной стандарт кодирования</h2>
+<ul>
+<li>В файлах НЕОБХОДИМО использовать только теги Ссылка на документацию.</li>
+<li>В файлах с кодом PHP НЕОБХОДИМО использовать только UTF-8 без BOM.</li>
+<li>В одном файле СЛЕДУЕТ либо объявлять символы (классы, функции, константы и т. д.), либо выполнять побочные действия (т. е. производить вывод, менять значения .ini и т. д.), но НЕ СЛЕДУЕТ делать и то и другое одновременно. В данном случае подразумевается, что функции/классы должны идти отдельно от контроллеров и моделей. Неправильно было бы писать так:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// побочное действие: установка уровня ошибок</span>
+<span class="nb">error_reporting</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+
+<span class="c1">// побочное действие: подключение файла</span>
+<span class="k">include</span> <span class="s1">&#39;config.php&#39;</span><span class="p">;</span>
+
+<span class="c1">// побочное действие: генерация вывода текста</span>
+<span class="k">echo</span> <span class="s1">&#39;Тут меню&#39;</span><span class="p">;</span>
+
+<span class="c1">// объявление (ПРАВИЛЬНАЯ ЧАСТЬ)</span>
+<span class="k">function</span> <span class="nf">bar</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// тело функции</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>Классам НЕОБХОДИМО давать имена в стиле StudlyCaps (название записанное без пробелов + каждое слово в этом названии начинается с большой буквы).</li>
+<li>Константам классов НЕОБХОДИМО давать имена в верхнем регистре с символом подчёркивания в качестве разделителя: MAIN_PRODUCT.</li>
+<li>Методам НЕОБХОДИМО давать имена в стиле camelCase (верблюжий стиль. Название записывается без пробелов, каждое слово с большой буквы, кроме первого). Свойства классов можно писать способами StudlyCaps, camelCase, или через нижнее подчеркивание $main_product.</li>
+</ul>
+<h2 id="psr-2">PSR-2. Стиль кодирования</h2>
+<ul>
+<li>Для отступов необходимо использовать 4 пробела, а не табуляцию. (Я с этим немного не согласен, так как табуляция значительно удобнее в плане работы с ней, но всегда можно настроить IDE так, чтобы он сохранял файл с автозаменой табуляции на 4 пробела. Путаница возникает только тогда, когда человек ставит 1 пробел, а потом нажимает табуляцию. Некоторые IDE приводят к виду в 4 пробела, а некоторые к 5-и пробелам, особенно заметно в исходном коде Google Chrome. Отсюда и рекомендуют ТОЛЬКО пробелы ставить. В свою очередь можно настроить IDE так, что по нажатию TAB ставились 4 пробела, а не табуляция. Для этого в PHPStorm перейдите в Settings - Editor - Code Style - PHP, и снимите галочку с Use tab character).</li>
+<li>Нельзя жёстко ограничивать длину строки, но мягкое ограничение длины строки должно быть 120 символов; строки желательно делать не длиннее 80 символов. Под жёсткого ограничения подразумевается то, что если у Вас возникла строка в 81 символ, то не надо этот 1 символ переносить на новую строчку.</li>
+<li>После ключевых слов управляющих структур НЕОБХОДИМО ставить один пробел; после названий функций и методов — НЕДОПУСТИМО. Открывающие фигурные скобки управляющих структур НЕОБХОДИМО оставлять на той же строке, а закрывающие фигурные скобки переносить на следующую строку после тела. НЕДОПУСТИМО ставить пробел после открывающих круглых скобок управляющих структур и НЕДОПУСТИМО ставить пробел перед закрывающими круглыми скобками управляющих структур.</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="x">if ($x == 1) {</span>
+<span class="x">    test();</span>
+<span class="x">} elseif () {</span>
+<span class="x">    test2();</span>
 <span class="x">}</span>
-<span class="x">} </span>
-<span class="x">$class1 = new MyClass1; </span>
-<span class="x">$class1-&gt;print(); </span>
-<span class="x">$class2 = new MyClass2; </span>
-<span class="x">$class2-&gt;print(); </span>
 </pre></div>
 
 
-<p>При исполнении сценария отобразится следующее: </p>
-<div class="codehilite"><pre><span></span><span class="x">MyClass1 </span>
-<span class="x">MyClass2 </span>
+<p>Список аргументов функции МОЖНО разбить на несколько строк, каждая из которых с одним отступом. При этом первый аргумент в списке НЕОБХОДИМО перенести на следующую строку, и в каждой строке НЕОБХОДИМО указать только один аргумент.</p>
+<div class="codehilite"><pre><span></span><span class="x">$foo-&gt;bar(</span>
+<span class="x">    $longArgument,</span>
+<span class="x">    $longerArgument,</span>
+<span class="x">    $muchLongerArgument</span>
+<span class="x">);</span>
 </pre></div>
 
 
-<p>Как видите, метод, объявленный как <code>abstract</code>, далее определяется дочерними классами, получая функциональные средства классов-потомков.</p>
-<h2 id="_3">Интерфейсы</h2>
-<p>Интерфейсы объектов позволяют программисту создавать код, который указывает, какие методы и свойства должен включать класс, без необходимости описания их функционала. </p>
-<p>Интерфейсы объявляются так же, как и обычные классы, но с использованием ключевого слова <code>interface</code>; 
-тела методов интерфейсов должны быть пустыми. Для включения интерфейса в класс программист должен
- использовать ключевое слово <code>implements</code> и реализовать методы во включаемом интерфейсе. При необходимости классы могут включать более одного интерфейса, тогда их перечисляют через пробел. </p>
-<p>Пример интерфейса:</p>
-<div class="codehilite"><pre><span></span><span class="x">interface Template </span>
-<span class="x"> { </span>
-<span class="x">   function setTamplate(); </span>
-<span class="x">   function getTemplate(); </span>
-<span class="x"> } </span>
-<span class="x">class MyTemplate implements Template </span>
-<span class="x">       { </span>
-<span class="x">      function setTamplate() </span>
-<span class="x">       { </span>
-<span class="x">// ... </span>
-<span class="x">       } </span>
-<span class="x">      function getTemplate() </span>
-<span class="x">       { </span>
-<span class="x">// ... </span>
-<span class="x">       } </span>
-<span class="x">} </span>
+<ul>
+<li>Все PHP-файлы НЕОБХОДИМО заканчивать одной пустой строкой.</li>
+<li>В конце файла не закрывать <code>PHP ?&gt;</code> Ссылка на документацию</li>
+<li>Ключевые слова необходимо писать в нижнем регистре. Константы <code>true, false, null</code> так же в нижнем регистре. Список ключевых слов.</li>
+<li><code>if, elseif, else</code></li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$expr1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// тело if</span>
+<span class="p">}</span> <span class="k">elseif</span> <span class="p">(</span><span class="nv">$expr2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// тело elseif</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// тело else;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>Здесь класс <code>MyTemplate</code> реализует функционал шаблонного интерфейса <code>Template</code>,
- который содержит метод <code>setTemplate()</code>
-  применения шаблона к некоей заготовке веб-страницы и метод <code>getTemplate()</code>
-   получения готового к применению кода. Это может быть, например, шаблон дизайна веб-страницы, который можно изменить заданием нового шаблона. Такие операции широко распространены в инструментальных средствах веб-дизайна, и использование интерфейсов позволяет разработчикам заранее, до конкретной реализации, определять функционал создаваемых средств. По мере разработки каждый интерфейс реализуется в определенном классе, и, если метод интерфейса не получает конкретного наполнения, отображается фатальная ош</p>
+<ul>
+<li>switch, case</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">switch</span> <span class="p">(</span><span class="nv">$expr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="mi">0</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;Первый case, заканчивается на break&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;Второй case, с умышленным проваливанием&#39;</span><span class="p">;</span>
+        <span class="c1">// no break</span>
+    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+    <span class="k">case</span> <span class="mi">3</span><span class="o">:</span>
+    <span class="k">case</span> <span class="mi">4</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;Третий case, завершается словом return вместо break&#39;</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="k">default</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;По умолчанию&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>while, do-while, for, foreach</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">while</span> <span class="p">(</span><span class="nv">$expr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// structure body</span>
+<span class="p">}</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="c1">// structure body;</span>
+<span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="nv">$expr</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// тело for</span>
+<span class="p">}</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="nv">$iterable</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// тело foreach</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li><code>try, catch</code></li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="x">try {</span>
+<span class="x">     // тело try</span>
+<span class="x">} catch (FirstExceptionType $e) {</span>
+<span class="x">    // тело catch</span>
+<span class="x">} catch (OtherExceptionType $e) {</span>
+<span class="x">    // catch body</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<h3 id="_1">Классы</h3>
+<ul>
+<li>Открывающие фигурные скобки классов НЕОБХОДИМО переносить на следующую строку, а закрывающие фигурные скобки переносить на следующую строку после тела.</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="x">class Core</span>
+<span class="x">{</span>
+<span class="x">    public function test</span>
+<span class="x">    {</span>
+<span class="x">        //тут код</span>
+<span class="x">    }</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<ul>
+<li>Видимость НЕОБХОДИМО объявлять для всех свойств и методов (public, private...)</li>
+<li>НЕОБХОДИМО оставлять одну пустую строку после объявления пространства имён (namespace) и НЕОБХОДИМО оставлять одну пустую строку после блока операторов use.</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">namespace</span> <span class="nx">Vendor\Package</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nx">FooInterface</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">BarClass</span> <span class="k">as</span> <span class="nx">Bar</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">OtherVendor\OtherPackage\BazClass</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">Foo</span> <span class="k">extends</span> <span class="nx">Bar</span> <span class="k">implements</span> <span class="nx">FooInterface</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">sampleFunction</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span> <span class="nv">$b</span> <span class="o">=</span> <span class="k">null</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$a</span> <span class="o">===</span> <span class="nv">$b</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">bar</span><span class="p">();</span>
+        <span class="p">}</span> <span class="k">elseif</span> <span class="p">(</span><span class="nv">$a</span> <span class="o">&gt;</span> <span class="nv">$b</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$foo</span><span class="o">-&gt;</span><span class="na">bar</span><span class="p">(</span><span class="nv">$arg1</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nx">BazClass</span><span class="o">::</span><span class="na">bar</span><span class="p">(</span><span class="nv">$arg2</span><span class="p">,</span> <span class="nv">$arg3</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">final</span> <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">bar</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// тело метода</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>Ключевые слова <code>extends</code> и <code>implements</code> НЕОБХОДИМО располагать на одной строке с именем класса. Список <code>implements</code> МОЖНО разбить на несколько строк, каждая из которых с одним отступом. При этом первый интерфейс в списке НЕОБХОДИМО перенести на следующую строку, и в каждой строке НЕОБХОДИМО указать только один интерфейс.</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="x">namespace Vendor\Package;</span>
+
+<span class="x">use FooClass;</span>
+<span class="x">use BarClass as Bar;</span>
+<span class="x">use OtherVendor\OtherPackage\BazClass;</span>
+
+<span class="x">class ClassName extends ParentClass implements</span>
+<span class="x">    \ArrayAccess,</span>
+<span class="x">    \Countable,</span>
+<span class="x">    \Serializable</span>
+<span class="x">{</span>
+<span class="x">    // константы, свойства, методы</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<ul>
+<li>НЕ СЛЕДУЕТ начинать название метода или свойства с подчёркивания для обозначения приватной или защищённой видимости.</li>
+<li>НЕДОПУСТИМО в одном объявлении видимости указывать более одного свойства.</li>
+<li>НЕДОПУСТИМО объявлять методы с пробелом после названия метода. Открывающую фигурную скобку НЕОБХОДИМО располагать на отдельной строке; закрывающую фигурную скобку НЕОБХОДИМО располагать на следующей строке после тела метода. НЕДОПУСТИМО оставлять пробел после открывающей круглой скобки и перед закрывающей.
+В списке аргументов метода НЕДОПУСТИМЫ пробелы перед запятыми и НЕОБХОДИМ один пробел после каждой запятой.</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">namespace</span> <span class="nx">Vendor\Package</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">ClassName</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">fooBarBaz</span><span class="p">(</span><span class="nv">$arg1</span><span class="p">,</span> <span class="o">&amp;</span><span class="nv">$arg2</span><span class="p">,</span> <span class="nv">$arg3</span> <span class="o">=</span> <span class="p">[])</span>
+    <span class="p">{</span>
+        <span class="c1">// тело метода</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>Список аргументов МОЖНО разбить на несколько строк. Когда список аргументов разбит на несколько строк, закрывающую круглую скобку и открывающую фигурную НЕОБХОДИМО располагать на одной отдельной строке, с одним пробелом между ними.</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">namespace</span> <span class="nx">Vendor\Package</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">ClassName</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">aVeryLongMethodName</span><span class="p">(</span>
+        <span class="nx">ClassTypeHint</span> <span class="nv">$arg1</span><span class="p">,</span>
+        <span class="o">&amp;</span><span class="nv">$arg2</span><span class="p">,</span>
+        <span class="k">array</span> <span class="nv">$arg3</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// тело метода</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>При наличии ключевых слов abstract и final, НЕОБХОДИМО чтобы они предшествовали модификаторам видимости. При наличии ключевого слова static, НЕОБХОДИМО чтобы оно следовало за модификатором видимости.</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">namespace</span> <span class="nx">Vendor\Package</span><span class="p">;</span>
+
+<span class="k">abstract</span> <span class="k">class</span> <span class="nc">ClassName</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="k">static</span> <span class="nv">$foo</span><span class="p">;</span>
+
+    <span class="k">abstract</span> <span class="k">protected</span> <span class="k">function</span> <span class="nf">zim</span><span class="p">();</span>
+
+    <span class="k">final</span> <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">bar</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// тело метода</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Матриал взят с сайта <a href="https://school-php.com/blog/9/php-%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D1%8B-%D0%BA%D0%BE%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">school-php</a></p>
                 
                   
                 
@@ -964,7 +1170,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../6_lecture/lecture/" title="6. Инкапсуляция, наследование, полиморфизм" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../7_lecture/lecture/" title="7. Абстрактные классы. Интерфейсы" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -973,19 +1179,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                6. Инкапсуляция, наследование, полиморфизм
+                7. Абстрактные классы. Интерфейсы
               </span>
             </div>
           </a>
         
         
-          <a href="../../10_lecture/lecture/" title="10. Оформление кода - PSR" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../1_lab/lab/" title="1. ПР Ситаксис, математические опреации, типы данных" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                10. Оформление кода - PSR
+                1. ПР Ситаксис, математические опреации, типы данных
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
