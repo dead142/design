@@ -36,7 +36,7 @@
     
     
       
-        <title>7. ПР Передача параметров методами GET, POST - Проектирование и дизайн информационных систем</title>
+        <title>13. ПР Autoloader + namespace - Проектирование и дизайн информационных систем</title>
       
     
     
@@ -103,7 +103,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                7. ПР Передача параметров методами GET, POST
+                13. ПР Autoloader + namespace
               
             </span>
           
@@ -449,63 +449,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        7. ПР Передача параметров методами GET, POST
-      </label>
-    
-    <a href="./" title="7. ПР Передача параметров методами GET, POST" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../7_lab/lab/" title="7. ПР Передача параметров методами GET, POST" class="md-nav__link">
       7. ПР Передача параметров методами GET, POST
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Задача
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    Методические материалы и помощь
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    Шкала оценивания и критерии оценки
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -573,11 +521,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../13_lab/lab/" title="13. ПР Autoloader + namespace" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        13. ПР Autoloader + namespace
+      </label>
+    
+    <a href="./" title="13. ПР Autoloader + namespace" class="md-nav__link md-nav__link--active">
       13. ПР Autoloader + namespace
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Методические материалы и помощь
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -954,21 +940,7 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    Задача
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
     Методические материалы и помощь
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    Шкала оценивания и критерии оценки
   </a>
   
 </li>
@@ -990,58 +962,19 @@
               
                 
                 
-                <h1 id="_1">ЗАДАЧА</h1>
-<p><strong>По теме:</strong> «Передача параметров методами GET, POST»</p>
-<p><strong>Цель работы:</strong> закрепление практических навыков работы формами, тегами языка html, передачи данных методами GET и POST.</p>
-<p><strong>Формируемые компетенции:</strong> ПК 5.4 «Производить разработку модулей информационной системы в соответствии с техническим заданием», ПК 5.3 Разрабатывать подсистемы безопасности информационной системы в соответствии с техническим заданием</p>
-<h3 id="_2">Задача</h3>
-<p>Реализовать форму из 5 полей различного типа на выбор обучающегося. Одно из полей должно иметь тип «файл» («file»). Создать файл index.php, при запуске которого должна отображаться форма для ввода данных</p>
-<p>В качестве свойств формы указать:</p>
-<p><code>method="post"</code>.
-  <code>action="&lt;путь ко второму файлу&gt;.php"</code>.
-  <code>enctype="multipart/form-data"</code>.</p>
-<p>Создать файл c расширением .php, куда будут отправляться данные из формы. В файле:</p>
+                <h1 id="_1">Задание</h1>
+<p><strong>Цель работы:</strong> понять принцип работы пространства имен и автозагрузки классов</p>
+<p><strong>Задачи:</strong></p>
 <ol>
-<li>реализовать класс Form, свойствами которого будут явяться имена полей формы;</li>
-<li>метод <code>SaveFile()</code>, который сохраняет файл, находящийся в свойстве объекта.</li>
-<li>метод <code>DeleteFile()</code> который удаляет файл, находящийся в свойстве объекта.</li>
-<li>создать экземпляр класса Form, свойствам которого присвоить значения, полученные методом POST из формы.</li>
-<li>сохранить файл;</li>
-<li>удалить файл.</li>
+<li>Переписать задание 12 так, что бы загрузка классов осуществлялась через namespace;</li>
+<li>Переписать задание 12 так, что бы загрузка классов осуществлялась через autoloader;</li>
+<li>Переписать задание 12 так, что бы загрузка классов осуществлялась через autoloader (composer);</li>
+<li><strong>Каждое задание 1-3 фиксируется в репозитории коммитом "namespace", "autoloader" и "composer"
+соответсвенно</strong>;</li>
 </ol>
-<h3 id="_3">Методические материалы и помощь</h3>
-<ol>
-<li>Для сохранения файла используйте метод <a href="https://www.php.net/manual/en/function.move-uploaded-file.php">move_uploaded_file()</a>;</li>
-<li>Для удаления файла используйте метод <a href="https://www.php.net/manual/en/function.unlink.php">unlink</a> .</li>
-<li>Полученный файл и данные находятся  в глобальных массивах ($_POST, $_GET и $_FILES)</li>
-</ol>
-<h2 id="_4">Шкала оценивания и критерии оценки</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Оценка</th>
-<th>Критерии оценивания выполнения задач (домашнего задания)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">5</td>
-<td>Ход решения верный, все его шаги выполнены правильно, получен верный ответ</td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td>Ход решения верный, все его шаги выполнены правильно, но допущена вычислительная ошибка</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td>Ход решения верный, задание решено не полностью</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td>Другие случаи, не соответствующие указанным критериям</td>
-</tr>
-</tbody>
-</table>
+<h3 id="_2">Методические материалы и помощь</h3>
+<p><a href="https://www.php.net/manual/ru/language.oop5.autoload.php">autoload</a>
+<a href="https://tyapk.ru/blog/post/php-autoload">php-autoload</a></p>
                 
                   
                 
@@ -1063,7 +996,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../6_lab/lab/" title="6. ПР Классы, работа с конструктором" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../12_lab/lab/" title="12. ПР создание сайта" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1072,19 +1005,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                6. ПР Классы, работа с конструктором
+                12. ПР создание сайта
               </span>
             </div>
           </a>
         
         
-          <a href="../../8_lab/lab/" title="8. ПР Наследование" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../../05-01-4/1_lecture/lecture/" title="1. Основные понятия и определения ИС" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                8. ПР Наследование
+                1. Основные понятия и определения ИС
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
