@@ -1,0 +1,1437 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Объекты и классы в ООП. - Проектирование и дизайн информационных систем</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../.." title="Проектирование и дизайн информационных систем" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Проектирование и дизайн информационных систем
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Объекты и классы в ООП.
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../.." title="Проектирование и дизайн информационных систем" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Проектирование и дизайн информационных систем
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Курсы РТК" class="md-nav__link">
+      Курсы РТК
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      МДК 05.02 Разработка
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        МДК 05.02 Разработка
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Семестр 4
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Семестр 4
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1">
+    
+    <label class="md-nav__link" for="nav-2-1-1">
+      Лекции
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-1">
+        Лекции
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../1_lecture/lecture.md" title="1. Синтаксис php" class="md-nav__link">
+      1. Синтаксис php
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="2. Основные конструкции php[null]" class="md-nav__link">
+      2. Основные конструкции php[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="3. Реализация типовых алгоритмов[null]" class="md-nav__link">
+      3. Реализация типовых алгоритмов[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../4_lecture/lecture.md" title="4. Объекты и классы в ООП" class="md-nav__link">
+      4. Объекты и классы в ООП
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../5_lecture/lecture.md" title="5. Конструкторы и деструкторы" class="md-nav__link">
+      5. Конструкторы и деструкторы
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../6_lecture/lecture.md" title="6. Инкапсуляция, наследование, полиморфизм" class="md-nav__link">
+      6. Инкапсуляция, наследование, полиморфизм
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../7_lecture/lecture.md" title="7. Абстрактные классы. Интерфейсы" class="md-nav__link">
+      7. Абстрактные классы. Интерфейсы
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../10_lecture/lecture.md" title="10. Оформление кода - PSR" class="md-nav__link">
+      10. Оформление кода - PSR
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../13_lecture/lecture.md" title="13. Autoloader + namespace" class="md-nav__link">
+      13. Autoloader + namespace
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../14_lecture/lecture.md" title="14. Требования к интерфейсу пользователя. Принципы создания графического пользовательского интерфейса (GUI)(S)[null]" class="md-nav__link">
+      14. Требования к интерфейсу пользователя. Принципы создания графического пользовательского интерфейса (GUI)(S)[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../15_lecture/lecture.md" title="15. Обоснование выбора технических средств[null]" class="md-nav__link">
+      15. Обоснование выбора технических средств[null]
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-2" type="checkbox" id="nav-2-1-2">
+    
+    <label class="md-nav__link" for="nav-2-1-2">
+      Практические и лабораторные
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-2">
+        Практические и лабораторные
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/test_php/" title="0. Тест 1 (PHP)" class="md-nav__link">
+      0. Тест 1 (PHP)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/test_html/" title="0. Тест 2 (CSS)" class="md-nav__link">
+      0. Тест 2 (CSS)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/1/" title="1. (15) ПР Обоснование выбора технических средств" class="md-nav__link">
+      1. (15) ПР Обоснование выбора технических средств
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/2/" title="2. (1) ПР Синтаксис языка программирования" class="md-nav__link">
+      2. (1) ПР Синтаксис языка программирования
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/3/" title="3. (2) ПР Работа со строками" class="md-nav__link">
+      3. (2) ПР Работа со строками
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/4/" title="4. ЛР Реализация алгоритмов обработки числовых данных. Отладка приложения" class="md-nav__link">
+      4. ЛР Реализация алгоритмов обработки числовых данных. Отладка приложения
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/5/" title="5. (3) ПР Функции для работы с массивами" class="md-nav__link">
+      5. (3) ПР Функции для работы с массивами
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/6/" title="6. (4) ПР Реализация типовых алгоритмов" class="md-nav__link">
+      6. (4) ПР Реализация типовых алгоритмов
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/7/" title="7. ЛР Реализация алгоритмов поиска. Отладка приложения" class="md-nav__link">
+      7. ЛР Реализация алгоритмов поиска. Отладка приложения
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/8/" title="8. ПР Построение и обоснование модели проекта" class="md-nav__link">
+      8. ПР Построение и обоснование модели проекта
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/9/" title="9. ПР Стоимостная оценка проекта" class="md-nav__link">
+      9. ПР Стоимостная оценка проекта
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="10. ЛР Построение диаграммы Вариантов использования и диаграммы. Последовательности и генерация кода[null]" class="md-nav__link">
+      10. ЛР Построение диаграммы Вариантов использования и диаграммы. Последовательности и генерация кода[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/11/" title="11. (5) ПР Создание класса" class="md-nav__link">
+      11. (5) ПР Создание класса
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="12. ПР Работа с объектами класса[null]" class="md-nav__link">
+      12. ПР Работа с объектами класса[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="13. ЛР Разработка приложений для моделирования процессов и явлений. Отладка приложения[null]" class="md-nav__link">
+      13. ЛР Разработка приложений для моделирования процессов и явлений. Отладка приложения[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/14/" title="14. (6) ПР Классы, работа с конструктором" class="md-nav__link">
+      14. (6) ПР Классы, работа с конструктором
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="15. ЛР Разработка и отладка генератора случайных символов[null]" class="md-nav__link">
+      15. ЛР Разработка и отладка генератора случайных символов[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="16. ЛР Построение диаграммы Деятельности, диаграммы Состояний и диаграммы Классов и генерация кода[null]" class="md-nav__link">
+      16. ЛР Построение диаграммы Деятельности, диаграммы Состояний и диаграммы Классов и генерация кода[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="17. ЛР Установка и настройка системы контроля версий с разграничением ролей[null]" class="md-nav__link">
+      17. ЛР Установка и настройка системы контроля версий с разграничением ролей[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/18/" title="18. ЛР Реализация обработки табличных данных. Отладка приложения" class="md-nav__link">
+      18. ЛР Реализация обработки табличных данных. Отладка приложения
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="19. ЛР Интеграция модуля в информационную систему[null]" class="md-nav__link">
+      19. ЛР Интеграция модуля в информационную систему[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="20. ЛР Построение диаграмм потоков данных и генерация кода[null]" class="md-nav__link">
+      20. ЛР Построение диаграмм потоков данных и генерация кода[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="21. ЛР Построение диаграммы компонентов и генерация кода[null]" class="md-nav__link">
+      21. ЛР Построение диаграммы компонентов и генерация кода[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="22. ЛР Построение диаграммы Кооперации и диаграммы Развертывания и генерация кода[null]" class="md-nav__link">
+      22. ЛР Построение диаграммы Кооперации и диаграммы Развертывания и генерация кода[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="23. ЛР Программирование обмена сообщениями между модулями[null]" class="md-nav__link">
+      23. ЛР Программирование обмена сообщениями между модулями[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/24/" title="24. (7) ЛР Организация файлового ввода-вывода данных" class="md-nav__link">
+      24. (7) ЛР Организация файлового ввода-вывода данных
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="25. ЛР Разработка модулей экспертной системы[null]" class="md-nav__link">
+      25. ЛР Разработка модулей экспертной системы[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="26. ЛР Создание сетевого сервера и сетевого клиента[null]" class="md-nav__link">
+      26. ЛР Создание сетевого сервера и сетевого клиента[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="27. ЛР Проектирование и разработка интерфейса пользователя»[null]" class="md-nav__link">
+      27. ЛР Проектирование и разработка интерфейса пользователя»[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/28/" title="28. ЛР Разработка графического интерфейса пользователя" class="md-nav__link">
+      28. ЛР Разработка графического интерфейса пользователя
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/29d/" title="29. ДОП ПР Наследование" class="md-nav__link">
+      29. ДОП ПР Наследование
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/30d/" title="30. ДОП ПР Система контроля версий" class="md-nav__link">
+      30. ДОП ПР Система контроля версий
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/31d/" title="31. ДОП ПР Оформление кода" class="md-nav__link">
+      31. ДОП ПР Оформление кода
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/32d/" title="32. ДОП ПР Cоздание сайта" class="md-nav__link">
+      32. ДОП ПР Cоздание сайта
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/33d/" title="33. ДОП ПР Autoloader + namespace" class="md-nav__link">
+      33. ДОП ПР Autoloader + namespace
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Семестр 5" class="md-nav__link">
+      Семестр 5
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      МДК 05.01 Проектирование (дизайн)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        МДК 05.01 Проектирование (дизайн)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Семестр 4
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Семестр 4
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-1" type="checkbox" id="nav-3-1-1">
+    
+    <label class="md-nav__link" for="nav-3-1-1">
+      Лекции
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-1-1">
+        Лекции
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/1_lecture/lecture/" title="1. Основные понятия и определения ИС" class="md-nav__link">
+      1. Основные понятия и определения ИС
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/2_lecture/lecture/" title="2. Обзор методологий разработки систем" class="md-nav__link">
+      2. Обзор методологий разработки систем
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="3. Диаграмма use-case" class="md-nav__link">
+      3. Диаграмма use-case
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/4_lecture/lecture/" title="4. Моделирование поведения (часть 1)" class="md-nav__link">
+      4. Моделирование поведения (часть 1)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-1-5" type="checkbox" id="nav-3-1-1-5">
+    
+    <label class="md-nav__link" for="nav-3-1-1-5">
+      5. Моделирование поведения (часть 2)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-3-1-1-5">
+        5. Моделирование поведения (часть 2)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/5_lecture/lecture/" title="5.1 Моделирование поведения (презентация)" class="md-nav__link">
+      5.1 Моделирование поведения (презентация)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="5.2 Моделирование поведения (лекция) [null]" class="md-nav__link">
+      5.2 Моделирование поведения (лекция) [null]
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="6. Разработка руководства по инсталляции программного средства по индивидуальному заданию[null]" class="md-nav__link">
+      6. Разработка руководства по инсталляции программного средства по индивидуальному заданию[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="7. Пользовательские истории (User Story)[null]" class="md-nav__link">
+      7. Пользовательские истории (User Story)[null]
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2">
+    
+    <label class="md-nav__link" for="nav-3-1-2">
+      Практические и лабораторные
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-1-2">
+        Практические и лабораторные
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/1_lab/lab/" title="1. Use-Case диаграмма" class="md-nav__link">
+      1. Use-Case диаграмма
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/4_lab/lab.md" title="4. Моделирование поведения (часть 1)" class="md-nav__link">
+      4. Моделирование поведения (часть 1)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/5_lab/lab/" title="5. Моделирование поведения (часть 2)" class="md-nav__link">
+      5. Моделирование поведения (часть 2)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/6_lab/lab/" title="6. Разработка руководства по инсталляции программного средства по индивидуальному заданию" class="md-nav__link">
+      6. Разработка руководства по инсталляции программного средства по индивидуальному заданию
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/7_lab/lab/" title="7. Диаграмма классов" class="md-nav__link">
+      7. Диаграмма классов
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-3" type="checkbox" id="nav-3-1-3">
+    
+    <label class="md-nav__link" for="nav-3-1-3">
+      Семестр 5
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-1-3">
+        Семестр 5
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-5/2_lab/lab.md" title="2. Установка yii2-user, yii2-rbac" class="md-nav__link">
+      2. Установка yii2-user, yii2-rbac
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-5/3_lab/lab.md" title="3. Gii, поведения и права доступа" class="md-nav__link">
+      3. Gii, поведения и права доступа
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="МДК.03.02 Инструментальные средства разработки" class="md-nav__link">
+      МДК.03.02 Инструментальные средства разработки
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="МДК.02.03 Организация администрирования" class="md-nav__link">
+      МДК.02.03 Организация администрирования
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="HTML, CSS/SCSS, GIT" class="md-nav__link">
+      HTML, CSS/SCSS, GIT
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Создание классов, свойств и методов.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Создание объектов – экземпляров класса
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Обращение к свойствам и методам
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">Объекты и классы в ООП.</h1>
+<p>В объектно-ориентированном программировании все данные определенного вида и все операции их обработки сводятся в некое единое целое, называемое объектом, который включает в себя набор переменных, называемых <em>свойствами</em> (или атрибутами) для хранения данных, и функций, называемых <em>методами</em>, предназначенными для обработки данных объекта. К свойствам объекта можно получить доступ только через его методы, которые все вместе образуют <em>интерфейс объекта</em>. Такое сокрытие, или, более научно, инкапсуляция, данных, является основным достоинством объектно-ориентированного программирования.
+Действия, выполняемые объектом, распространяются только на используемые им данные, что позволяет разбить общую задачу на независимые части.</p>
+<p>В объектно-ориентированной программе каждый объект идентифицируется отдельной переменной, с помощью которой становится возможным обращение к нему из программы. Например, в программе могут существовать два объекта, которые реализуют диалоговые окна, отличающиеся только размерами. Чтобы программа могла обратиться к этим объектам, при их создании каждому объекту присваивается уникальный идентификатор, хранящийся в отдельной переменной программы.</p>
+<p>Объекты могут группироваться в классы, которые включают в себя объекты со сходными признаками. В этих классах содержатся объекты, у которых одинаковые методы в каждом объекте действуют одинаково, а одинаковые переменные объекта представляют одни и те же свойства. Однако каждый объект класса может иметь различный набор переменных. Скажем, класс диалоговых окон может содержать объекты, отличающиеся набором элементов интерфейса (кнопками, меню и пр.). Но методы изменения размеров и перемещения окон должны совпадать.</p>
+<p>Таким образом, объектно-ориентированное программирование состоит в описании структуры и поведения проектируемой программы, отвечающем на вопросы:</p>
+<ul>
+<li>из каких частей состоит программа;</li>
+<li>какие функции реализует каждая часть.</li>
+</ul>
+<p>Каждая часть должна иметь минимальный и точно определенный набор функций и быть как можно меньше связанной с остальными частями. Начав с крупных частей, нужно последовательно уточнить и выделить более мелкие объекты и т. д., составив иерархическую структуру классов. После этого каждый компонент может реализовываться независимо от остальных.</p>
+<p>Объектно-ориентированный язык программирования должен поддерживать <em>полиморфизм</em>, который представляет собой возможность исполнять одну и ту же операцию в различных классах по-разному. Например, в классе геометрических фигур объекты эллипс, круг могут подвергаться деформации одной и той же функцией, переопределяемой в зависимости от конкретной ситуации, что значительно упрощает написание кода.</p>
+<p>Другая отличительная особенность объектно-ориентированной программы — <em>наследование</em>, которое позволяет создавать из одного класса, называемого родительским, другой подкласс — <em>дочерний</em>, образуя иерархические взаимосвязи между ними. Дочерний класс наследует свойства и методы своего родительского класса. Используя наследование, можно расширять и дополнять существующие классы. По мере необходимости из простого базового класса можно получать сложные и специализированные производные классы. Это делает код более пригодным для повторного использования, что является одним из важных преимуществ объектно-ориентированного подхода.</p>
+<h2 id="_2">Создание классов, свойств и методов.</h2>
+<p>Теперь перейдем к обсуждению практической реализации всего вышесказанного в языке PHP. Для создания класса в РНР используется ключевое слово class. Вот как выполняется объявление класса:</p>
+<p><code>class имя_класса</code></p>
+<p>Запись <code>имя_класса</code> обозначает имя создаваемого класса.</p>
+<p>Каждый класс должен иметь методы и свойства. Свойства определяются внутри класса с помощью ключевого слова <code>var</code>:</p>
+<div class="codehilite"><pre><span></span><span class="x">class MyClass</span>
+<span class="x">{</span>
+<span class="x">var $parameter1;</span>
+<span class="x">var $parameter2;</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<p>А сейчас добавим в класс методы:</p>
+<div class="codehilite"><pre><span></span><span class="x">class MyClass</span>
+<span class="x">{</span>
+<span class="x">var $parameter1;</span>
+<span class="x">var $parameter2;</span>
+<span class="x">function metod 1($parameter2)</span>
+<span class="x">{</span>
+<span class="x">}</span>
+<span class="x">function metod2 ($parameterl, $parameter2)</span>
+<span class="x">{</span>
+<span class="x">}</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<p>Здесь в классе <code>MyClass</code> создаются два метода <code>metod1</code> и <code>metod2</code>, которые принимают один и два параметра соответственно.</p>
+<p>В большинстве классов используются особые методы, называемые <em>конструкторами</em>. Они автоматически исполняются при создании класса и служат для задания начальных значений свойствам класса. В PHP конструктор объявляется так же, как другие методы, но с именем <code>_constract()</code>:</p>
+<div class="codehilite"><pre><span></span><span class="x">class MyClass</span>
+<span class="x">{</span>
+<span class="x">  function _construct ($param)</span>
+<span class="x">   {</span>
+<span class="x">    $param=10;</span>
+<span class="x">   }</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<p>Если по ходу исполнения программы все ссылки на объект — экземпляр класса удаляются или выходят из области видимости, то автоматически исполняется функция — деструктор, которая по своим действиям противоположна конструктору и отменяет все сделанные им операции.</p>
+<h2 id="_3">Создание объектов – экземпляров класса</h2>
+<p>Чтобы начать работу со средствами, предоставляемыми классом, следует создать объект, представляющий собой конкретную реализацию свойств и методов класса, так называемый экземпляр класса. Образно говоря, класс можно сравнить с неким шаблоном, штампом, «применением» которого к заготовке «штампуется», то есть создается, конкретная «реализация» шаблона — нужная вам деталь. Так и в программе, при создании объекта в области памяти формируется структура данных, хранящая свойства и методы класса, к которым вы можете обращаться из программы. Как и для механического штампа, для каждого класса может быть создано множество «деталей» — экземпляров класса, независимых друг от друга. Вы сможете работать с каждым из созданных объектов по отдельности, не затрагивая остальные.</p>
+<p>Для создания объекта используется ключевое слово new, в котором указывается класс, на основе которого создается объект, и параметры исполнения конструктора класса. Вот пример создания трех объектов одного и того же класса MyClass:</p>
+<div class="codehilite"><pre><span></span><span class="x">class MyClass</span>
+<span class="x">{</span>
+<span class="x">  function MyClass($param)</span>
+<span class="x">    {</span>
+<span class="x">         echo &quot;&lt;p&gt; Конструктору класса передано значение параметра $param &lt;/p&gt;&quot;;</span>
+<span class="x">    }</span>
+<span class="x">}</span>
+<span class="x">$a = new MyClass (&quot;Class_1&quot;) ;</span>
+<span class="x">$b = new MyClass (&quot;Class_2&quot;) ;</span>
+<span class="x">$c = new MyClass (&quot;Class_3&quot;) ;</span>
+</pre></div>
+
+
+<p>При каждой операции вызова класса автоматически вызывается конструктор класса <code>MyClass</code>,
+которому передается значение параметра $param: <code>Class_1</code>, <code>Class_2</code> и <code>Class_3</code> соответственно,
+ которые будут отображаться при каждом исполнении функции.
+  Определения функции могут включить указание типа класса,
+   передаваемого в качестве параметра. Если функция будет вызвана с неправильным типом, то произойдет ошибка.</p>
+<div class="codehilite"><pre><span></span><span class="x">function receiveMyClass(MyClass $object)</span>
+<span class="x">{</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<p>Функция может также возвращать объект.</p>
+<h2 id="_4">Обращение к свойствам и методам</h2>
+<p>Итак, у нас есть класс, содержащий свойства и методы — программы, которые обрабатывают данные, хранимые в свойствах. Чтобы обратиться к свойству класса из метода этого класса, следует использовать специальную переменную $this следующим образом:</p>
+<div class="codehilite"><pre><span></span><span class="x">class MyClass</span>
+<span class="x">{</span>
+<span class="x">var $myclass_parameter;</span>
+<span class="x">function MyClassFunction ($param)</span>
+<span class="x">  {</span>
+<span class="x">    $this-&gt;myclass_parameter = $param</span>
+<span class="x">    echo $this-&gt;myclass_parameter;</span>
+<span class="x">  }</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<p>Здесь свойству <code>$myclass_parameter</code> класса <code>MyClass</code> внутри функции <code>MyClassFunction</code> присваивается
+ значение параметра функции <code>$param</code>, что указывается в записи <code>$this-&gt;myclass_parameter</code>.</p>
+<p>Доступ к свойствам и методам класса из кода вне класса в PHP определяется специальными модификаторами доступа:
++ public (общедоступны) — открывает доступ к свойствам и методам класса;<br />
++ private (приватный) — разрешает доступ к свойствам и методам класса только изнутри и запрещает наследование;
++ protected (защищенный) — разрешает доступ к свойствам и методам класса только изнутри и разрешает наследование.</p>
+<p>По умолчанию всем свойствам класса присваивается модификатор <code>public</code>, после чего к его свойствам и методам можно обращаться таким образом:</p>
+<div class="codehilite"><pre><span></span><span class="x">class MyClass</span>
+<span class="x">{</span>
+<span class="x">public $myclass_parameter;</span>
+<span class="x">}</span>
+<span class="x">$object = new MyClass ();</span>
+<span class="x">$object-&gt;myclass_parameter = &quot;value&quot;;</span>
+</pre></div>
+
+
+<p>В этом коде мы сначала создали объект класса MyClass и обратились к свойству объекта, записав:</p>
+<div class="codehilite"><pre><span></span><span class="x">$object-&gt;myclass_parameter</span>
+</pre></div>
+
+
+<p>Тем самым мы изменили свойство класса извне кода класса.</p>
+<p>Для обращения к методам класса используются очень похожие конструкции языка. Например, пусть у нас имеется класс:</p>
+<div class="codehilite"><pre><span></span><span class="x">class MyClass</span>
+<span class="x">  {</span>
+<span class="x">    function MyClassFunction ($param);</span>
+<span class="x">      {</span>
+<span class="x">      }</span>
+<span class="x">}</span>
+</pre></div>
+
+
+<p>Тогда для вызова функции <code>MyClassFunction</code> извне класса следует писать так:</p>
+<div class="codehilite"><pre><span></span><span class="x">$MyClassObject = new MyClass(); $MyClassObject-&gt;MyClassFunction(&quot;value&quot;);</span>
+</pre></div>
+
+
+<p>Как видите, запись почти аналогична обращению к свойству класса, только вместо имени свойства используется название метода класса.</p>
+<p>Для получения данных, возвращаемых методом класса, следует писать так: 
+<code>$return_value=$MyClassObject-&gt;MyClassFunction("value");</code>
+Таким образом, вы поняли, как в PHP реализуется работа со свойствами и методами класса. Но этим возможности PHP отнюдь не исчерпываются.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>
