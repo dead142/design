@@ -1,0 +1,1599 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Синтаксис php, математические операции, типы данных - Проектирование и дизайн информационных систем</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#php" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../.." title="Проектирование и дизайн информационных систем" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Проектирование и дизайн информационных систем
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Синтаксис php, математические операции, типы данных
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../.." title="Проектирование и дизайн информационных систем" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Проектирование и дизайн информационных систем
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Курсы РТК" class="md-nav__link">
+      Курсы РТК
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      МДК 05.02 Разработка
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        МДК 05.02 Разработка
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Семестр 4
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Семестр 4
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1">
+    
+    <label class="md-nav__link" for="nav-2-1-1">
+      Лекции
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-1">
+        Лекции
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../1_lecture/lecture.md" title="1. Синтаксис php" class="md-nav__link">
+      1. Синтаксис php
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="2. Основные конструкции php[null]" class="md-nav__link">
+      2. Основные конструкции php[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="3. Реализация типовых алгоритмов[null]" class="md-nav__link">
+      3. Реализация типовых алгоритмов[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../4_lecture/lecture.md" title="4. Объекты и классы в ООП" class="md-nav__link">
+      4. Объекты и классы в ООП
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../5_lecture/lecture.md" title="5. Конструкторы и деструкторы" class="md-nav__link">
+      5. Конструкторы и деструкторы
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../6_lecture/lecture.md" title="6. Инкапсуляция, наследование, полиморфизм" class="md-nav__link">
+      6. Инкапсуляция, наследование, полиморфизм
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../7_lecture/lecture.md" title="7. Абстрактные классы. Интерфейсы" class="md-nav__link">
+      7. Абстрактные классы. Интерфейсы
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../10_lecture/lecture.md" title="10. Оформление кода - PSR" class="md-nav__link">
+      10. Оформление кода - PSR
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../13_lecture/lecture.md" title="13. Autoloader + namespace" class="md-nav__link">
+      13. Autoloader + namespace
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../14_lecture/lecture.md" title="14. Требования к интерфейсу пользователя. Принципы создания графического пользовательского интерфейса (GUI)(S)[null]" class="md-nav__link">
+      14. Требования к интерфейсу пользователя. Принципы создания графического пользовательского интерфейса (GUI)(S)[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../15_lecture/lecture.md" title="15. Обоснование выбора технических средств[null]" class="md-nav__link">
+      15. Обоснование выбора технических средств[null]
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-2" type="checkbox" id="nav-2-1-2">
+    
+    <label class="md-nav__link" for="nav-2-1-2">
+      Практические и лабораторные
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-2">
+        Практические и лабораторные
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/test_php/" title="0. Тест 1 (PHP)" class="md-nav__link">
+      0. Тест 1 (PHP)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/test_html/" title="0. Тест 2 (CSS)" class="md-nav__link">
+      0. Тест 2 (CSS)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/1/" title="1. (15) ПР Обоснование выбора технических средств" class="md-nav__link">
+      1. (15) ПР Обоснование выбора технических средств
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/2/" title="2. (1) ПР Синтаксис языка программирования" class="md-nav__link">
+      2. (1) ПР Синтаксис языка программирования
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/3/" title="3. (2) ПР Работа со строками" class="md-nav__link">
+      3. (2) ПР Работа со строками
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/4/" title="4. ЛР Реализация алгоритмов обработки числовых данных. Отладка приложения" class="md-nav__link">
+      4. ЛР Реализация алгоритмов обработки числовых данных. Отладка приложения
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/5/" title="5. (3) ПР Функции для работы с массивами" class="md-nav__link">
+      5. (3) ПР Функции для работы с массивами
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/6/" title="6. (4) ПР Реализация типовых алгоритмов" class="md-nav__link">
+      6. (4) ПР Реализация типовых алгоритмов
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/7/" title="7. ЛР Реализация алгоритмов поиска. Отладка приложения" class="md-nav__link">
+      7. ЛР Реализация алгоритмов поиска. Отладка приложения
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/8/" title="8. ПР Построение и обоснование модели проекта" class="md-nav__link">
+      8. ПР Построение и обоснование модели проекта
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/9/" title="9. ПР Стоимостная оценка проекта" class="md-nav__link">
+      9. ПР Стоимостная оценка проекта
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="10. ЛР Построение диаграммы Вариантов использования и диаграммы. Последовательности и генерация кода[null]" class="md-nav__link">
+      10. ЛР Построение диаграммы Вариантов использования и диаграммы. Последовательности и генерация кода[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/11/" title="11. (5) ПР Создание класса" class="md-nav__link">
+      11. (5) ПР Создание класса
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="12. ПР Работа с объектами класса[null]" class="md-nav__link">
+      12. ПР Работа с объектами класса[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="13. ЛР Разработка приложений для моделирования процессов и явлений. Отладка приложения[null]" class="md-nav__link">
+      13. ЛР Разработка приложений для моделирования процессов и явлений. Отладка приложения[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/14/" title="14. (6) ПР Классы, работа с конструктором" class="md-nav__link">
+      14. (6) ПР Классы, работа с конструктором
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="15. ЛР Разработка и отладка генератора случайных символов[null]" class="md-nav__link">
+      15. ЛР Разработка и отладка генератора случайных символов[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="16. ЛР Построение диаграммы Деятельности, диаграммы Состояний и диаграммы Классов и генерация кода[null]" class="md-nav__link">
+      16. ЛР Построение диаграммы Деятельности, диаграммы Состояний и диаграммы Классов и генерация кода[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="17. ЛР Установка и настройка системы контроля версий с разграничением ролей[null]" class="md-nav__link">
+      17. ЛР Установка и настройка системы контроля версий с разграничением ролей[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/18/" title="18. ЛР Реализация обработки табличных данных. Отладка приложения" class="md-nav__link">
+      18. ЛР Реализация обработки табличных данных. Отладка приложения
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="19. ЛР Интеграция модуля в информационную систему[null]" class="md-nav__link">
+      19. ЛР Интеграция модуля в информационную систему[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="20. ЛР Построение диаграмм потоков данных и генерация кода[null]" class="md-nav__link">
+      20. ЛР Построение диаграмм потоков данных и генерация кода[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="21. ЛР Построение диаграммы компонентов и генерация кода[null]" class="md-nav__link">
+      21. ЛР Построение диаграммы компонентов и генерация кода[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="22. ЛР Построение диаграммы Кооперации и диаграммы Развертывания и генерация кода[null]" class="md-nav__link">
+      22. ЛР Построение диаграммы Кооперации и диаграммы Развертывания и генерация кода[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="23. ЛР Программирование обмена сообщениями между модулями[null]" class="md-nav__link">
+      23. ЛР Программирование обмена сообщениями между модулями[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/24/" title="24. (7) ЛР Организация файлового ввода-вывода данных" class="md-nav__link">
+      24. (7) ЛР Организация файлового ввода-вывода данных
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="25. ЛР Разработка модулей экспертной системы[null]" class="md-nav__link">
+      25. ЛР Разработка модулей экспертной системы[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="26. ЛР Создание сетевого сервера и сетевого клиента[null]" class="md-nav__link">
+      26. ЛР Создание сетевого сервера и сетевого клиента[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../#" title="27. ЛР Проектирование и разработка интерфейса пользователя»[null]" class="md-nav__link">
+      27. ЛР Проектирование и разработка интерфейса пользователя»[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/28/" title="28. ЛР Разработка графического интерфейса пользователя" class="md-nav__link">
+      28. ЛР Разработка графического интерфейса пользователя
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/29d/" title="29. ДОП ПР Наследование" class="md-nav__link">
+      29. ДОП ПР Наследование
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/30d/" title="30. ДОП ПР Система контроля версий" class="md-nav__link">
+      30. ДОП ПР Система контроля версий
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/31d/" title="31. ДОП ПР Оформление кода" class="md-nav__link">
+      31. ДОП ПР Оформление кода
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/32d/" title="32. ДОП ПР Cоздание сайта" class="md-nav__link">
+      32. ДОП ПР Cоздание сайта
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../lab/33d/" title="33. ДОП ПР Autoloader + namespace" class="md-nav__link">
+      33. ДОП ПР Autoloader + namespace
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Семестр 5" class="md-nav__link">
+      Семестр 5
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      МДК 05.01 Проектирование (дизайн)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        МДК 05.01 Проектирование (дизайн)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Семестр 4
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Семестр 4
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-1" type="checkbox" id="nav-3-1-1">
+    
+    <label class="md-nav__link" for="nav-3-1-1">
+      Лекции
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-1-1">
+        Лекции
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/1_lecture/lecture/" title="1. Основные понятия и определения ИС" class="md-nav__link">
+      1. Основные понятия и определения ИС
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/2_lecture/lecture/" title="2. Обзор методологий разработки систем" class="md-nav__link">
+      2. Обзор методологий разработки систем
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="3. Диаграмма use-case" class="md-nav__link">
+      3. Диаграмма use-case
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/4_lecture/lecture/" title="4. Моделирование поведения (часть 1)" class="md-nav__link">
+      4. Моделирование поведения (часть 1)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-1-5" type="checkbox" id="nav-3-1-1-5">
+    
+    <label class="md-nav__link" for="nav-3-1-1-5">
+      5. Моделирование поведения (часть 2)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-3-1-1-5">
+        5. Моделирование поведения (часть 2)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/5_lecture/lecture/" title="5.1 Моделирование поведения (презентация)" class="md-nav__link">
+      5.1 Моделирование поведения (презентация)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="5.2 Моделирование поведения (лекция) [null]" class="md-nav__link">
+      5.2 Моделирование поведения (лекция) [null]
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="6. Разработка руководства по инсталляции программного средства по индивидуальному заданию[null]" class="md-nav__link">
+      6. Разработка руководства по инсталляции программного средства по индивидуальному заданию[null]
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="7. Пользовательские истории (User Story)[null]" class="md-nav__link">
+      7. Пользовательские истории (User Story)[null]
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2">
+    
+    <label class="md-nav__link" for="nav-3-1-2">
+      Практические и лабораторные
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-1-2">
+        Практические и лабораторные
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/1_lab/lab/" title="1. Use-Case диаграмма" class="md-nav__link">
+      1. Use-Case диаграмма
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/4_lab/lab.md" title="4. Моделирование поведения (часть 1)" class="md-nav__link">
+      4. Моделирование поведения (часть 1)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/5_lab/lab/" title="5. Моделирование поведения (часть 2)" class="md-nav__link">
+      5. Моделирование поведения (часть 2)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/6_lab/lab/" title="6. Разработка руководства по инсталляции программного средства по индивидуальному заданию" class="md-nav__link">
+      6. Разработка руководства по инсталляции программного средства по индивидуальному заданию
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-4/7_lab/lab/" title="7. Диаграмма классов" class="md-nav__link">
+      7. Диаграмма классов
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-3" type="checkbox" id="nav-3-1-3">
+    
+    <label class="md-nav__link" for="nav-3-1-3">
+      Семестр 5
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-1-3">
+        Семестр 5
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-5/2_lab/lab.md" title="2. Установка yii2-user, yii2-rbac" class="md-nav__link">
+      2. Установка yii2-user, yii2-rbac
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-01-5/3_lab/lab.md" title="3. Gii, поведения и права доступа" class="md-nav__link">
+      3. Gii, поведения и права доступа
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="МДК.03.02 Инструментальные средства разработки" class="md-nav__link">
+      МДК.03.02 Инструментальные средства разработки
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="МДК.02.03 Организация администрирования" class="md-nav__link">
+      МДК.02.03 Организация администрирования
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="HTML, CSS/SCSS, GIT" class="md-nav__link">
+      HTML, CSS/SCSS, GIT
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Имена переменных
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#php_1" class="md-nav__link">
+    Типы данных (переменных) в PHP
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    Тип Boolean (двоичные данные)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integer" class="md-nav__link">
+    Тип integer (целые числа)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#float" class="md-nav__link">
+    Тип float (числа с плавающей точкой)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    Тип string (строки)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Одинарные кавычки
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Двойные кавычки
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heredoc-" class="md-nav__link">
+    Heredoc-синтаксис
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Массивы
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="php">Синтаксис php, математические операции, типы данных</h1>
+<h2 id="_1">Имена переменных</h2>
+<ul>
+<li>Имена всех переменных в PHP должны начинаться со знака $;</li>
+<li>Имена переменных чувствительны к регистру букв: например, $var — не то же самое, что $Var или $VAR:</li>
+<li>имя переменной может состоять из символов кириллицы. <strong>Однако не рекоммендуется применять кириллицу в именах переменных</strong>;</li>
+<li>переменные в PHP — это особые объекты, которые могут содержать   "все, что угодно";</li>
+<li>в PHP не нужно ни описывать переменные явно, ни указывать их тип;</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="s2">&quot;Иван&quot;</span><span class="p">;</span>
+<span class="nv">$Var</span> <span class="o">=</span> <span class="s2">&quot;Кирилл&quot;</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s2">&quot;</span><span class="si">$var</span><span class="s2">, </span><span class="si">$Var</span><span class="s2">&quot;</span><span class="p">;</span>      <span class="c1">// &quot;Иван, Кирилл&quot;</span>
+
+<span class="err">$</span><span class="mi">4</span><span class="nx">site</span> <span class="o">=</span> <span class="s1">&#39;not yet&#39;</span><span class="p">;</span>     <span class="c1">// неверно; начинается с цифры</span>
+<span class="nv">$_4site</span> <span class="o">=</span> <span class="s1">&#39;not yet&#39;</span><span class="p">;</span>    <span class="c1">// верно; начинается с символа подчеркивания</span>
+<span class="nv">$tдyte</span> <span class="o">=</span> <span class="s1">&#39;mansikka&#39;</span><span class="p">;</span>    <span class="c1">// верно; &#39;д&#39; это (Дополнительный) ASCII 228.</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<h2 id="php_1">Типы данных (переменных) в PHP</h2>
+<h3 id="boolean">Тип Boolean (двоичные данные)</h3>
+<p>Может быть либо TRUE, либо FALSE</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$x</span> <span class="o">=</span> <span class="k">True</span><span class="p">;</span> <span class="c1">// присвоить $x значение TRUE</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<p>Обычно используется, как условие:</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$someparam</span> <span class="o">==</span> <span class="k">TRUE</span><span class="p">)</span> <span class="p">{</span>
+     <span class="k">echo</span> <span class="s2">&quot;&lt;hr&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<p>или еще проще:</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$someparam</span><span class="p">)</span> <span class="p">{</span>
+     <span class="k">echo</span> <span class="s2">&quot;&lt;hr&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<h3 id="integer">Тип integer (целые числа)</h3>
+<p>Целое это число из множества Z = {..., -2, -1, 0, 1, 2, ...}, обычно длиной 32 бита (от –2 147 483 648 до 2 147 483 647).</p>
+<p>Целые могут быть указаны в десятичной, шестнадцатеричной или восьмеричной системе счисления, по желанию с предшествующим знаком (- или +).</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">1234</span><span class="p">;</span> <span class="c1">// десятичное число</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">123</span><span class="p">;</span> <span class="c1">// отрицательное число</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mo">0123</span><span class="p">;</span> <span class="c1">// восьмеричное число (эквивалентно 83 в десятичной системе)</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mh">0x1A</span><span class="p">;</span> <span class="c1">// шестнадцатеричное число (эквивалентно 26 в десятичной системе)</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<h3 id="float">Тип float (числа с плавающей точкой)</h3>
+<p>Double - вещественное число довольно большой точности (ее должно хватить для подавляющего большинства математических вычислений).</p>
+<p>Размер целого зависит от платформы, хотя максимум, как правило, ~1.8e308 с точностью около 14 десятичных цифр (это 64-битный IEEE-формат).</p>
+<p><strong>ВАЖНО: </strong> 1/3 в десятичной форме принимает вид 0.3333333. . .. не доверяйте точности последних цифр в результатах с числами с плавающей точкой и никогда не проверяйте их на равенство. Если вам действительно необходима высокая точность, вам следует использовать математические функции произвольной точности или gmp-функции.</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mf">1.234</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="mf">1.2e3</span><span class="p">;</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="mf">7E-10</span><span class="p">;</span>
+
+<span class="k">echo</span> <span class="p">(</span><span class="mf">0.1</span><span class="o">+</span><span class="mf">0.7</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span><span class="p">;</span>  <span class="c1">// =8</span>
+<span class="k">echo</span> <span class="nb">floor</span><span class="p">((</span><span class="mf">0.1</span><span class="o">+</span><span class="mf">0.7</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span><span class="p">);</span>  <span class="c1">// =7 Странное поведение PHP</span>
+<span class="c1">//Ф-ция floor()Возвращает следующее наименьшее целочисленное значение (как число с плавающей запятой), округляя значение в случае необходимости.</span>
+
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<h3 id="string">Тип string (строки)</h3>
+<p>Строка может быть определена тремя различными способами.</p>
+<ul>
+<li>одинарными кавычками</li>
+<li>двойными кавычками</li>
+<li>heredoc-синтаксисом</li>
+</ul>
+<h4 id="_2">Одинарные кавычки</h4>
+<p>Простейший способ определить строку - это заключить ее в одинарные кавычки (символ ').</p>
+<p>Чтобы использовать одинарную кавычку внутри строки, как и во многих других языках, ее необходимо предварить символом обратной косой черты (), т. е. экранировать ее.</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">echo</span> <span class="s1">&#39;это простая строка&#39;</span><span class="p">;</span>
+
+<span class="k">echo</span> <span class="s1">&#39;Также вы можете вставлять в строки</span>
+<span class="s1">символ новой строки таким образом,</span>
+<span class="s1">поскольку это нормально&#39;</span><span class="p">;</span>
+
+<span class="c1">// Выведет: Однажды Арнольд сказал: &quot;I&#39;ll be back&quot;</span>
+<span class="k">echo</span> <span class="s1">&#39;Однажды Арнольд сказал: &quot;I\&#39;ll be back&quot;&#39;</span><span class="p">;</span>
+
+<span class="c1">// Выведет: Вы удалили C:\*.*?</span>
+<span class="k">echo</span> <span class="s1">&#39;Вы удалили C:\\*.*?&#39;</span><span class="p">;</span>
+
+<span class="c1">// Выведет: Вы удалили C:\*.*?</span>
+<span class="k">echo</span> <span class="s1">&#39;Вы удалили C:\*.*?&#39;</span><span class="p">;</span>
+
+<span class="c1">// Выведет: Это не вставит: \n новую строку</span>
+<span class="k">echo</span> <span class="s1">&#39;Это не вставит: \n новую строку&#39;</span><span class="p">;</span>
+
+<span class="c1">// Выведет: Переменные $expand также $either не подставляются</span>
+<span class="k">echo</span> <span class="s1">&#39;Переменные $expand также $either не подставляются&#39;</span><span class="p">;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<h4 id="_3">Двойные кавычки</h4>
+<p>Если строка заключена в двойные кавычки ("), PHP распознает большее количество управляющих последовательностей для специальных символов:</p>
+<table>
+<thead>
+<tr>
+<th>Последовательность</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\n</td>
+<td>новая строка (LF или 0x0A (10) в ASCII)</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>возврат каретки (CR или 0x0D (13) в ASCII)</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>горизонтальная табуляция (HT или 0x09 (9) в ASCII)</td>
+</tr>
+<tr>
+<td>\</td>
+<td>обратная косая черта</td>
+</tr>
+<tr>
+<td>\$</td>
+<td>знак доллара</td>
+</tr>
+<tr>
+<td>\"</td>
+<td>двойная кавычка</td>
+</tr>
+<tr>
+<td>[0-7]{1,3}</td>
+<td>последовательность символов, соответствующая регулярному выражению, символ в восьмеричной системе счисления</td>
+</tr>
+<tr>
+<td>\x[0-9A-Fa-f]{1,2}</td>
+<td>последовательность символов, соответствующая регулярному выражению, символ в шестнадцатеричной системе счисления</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Если строка определяется в двойных кавычках, либо при помощи heredoc, переменные внутри нее обрабатываются.</strong></p>
+<p>Существует два типа синтаксиса: простой и сложный. Простой синтаксис более легок и удобен. Он дает возможность обработки переменной, значения массива (array) или свойства объекта (object).</p>
+<p>Сложный синтаксис был введен в PHP 4 и может быть распознан по фигурным скобкам, окружающих выражение.</p>
+<p>Если интерпретатор встречает знак доллара ($), он захватывает так много символов, сколько возможно, чтобы сформировать правильное имя переменной. Если вы хотите точно определить конец имени, заключайте имя переменной в фигурные скобки.</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$beer</span> <span class="o">=</span> <span class="s1">&#39;Heineken&#39;</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s2">&quot;</span><span class="si">$beer</span><span class="s2">&#39;s taste is great&quot;</span><span class="p">;</span> <span class="c1">// работает, &quot;&#39;&quot; это неверный символ для имени переменной</span>
+<span class="k">echo</span> <span class="s2">&quot;He drank some </span><span class="si">$beers</span><span class="s2">&quot;</span><span class="p">;</span>   <span class="c1">// не работает, &#39;s&#39; это верный символ для имени переменной</span>
+<span class="k">echo</span> <span class="s2">&quot;He drank some </span><span class="si">${</span><span class="nv">beer</span><span class="si">}</span><span class="s2">s&quot;</span><span class="p">;</span> <span class="c1">// работает</span>
+<span class="k">echo</span> <span class="s2">&quot;He drank some </span><span class="si">{</span><span class="nv">$beer</span><span class="si">}</span><span class="s2">s&quot;</span><span class="p">;</span> <span class="c1">// работает</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<p>Символы в строках можно использовать и модифицировать, определив их смещение относительно начала строки, начиная с нуля, в фигурных скобках после строки. Приведем примеры:</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// Получение первого символа строки</span>
+<span class="nv">$str</span> <span class="o">=</span> <span class="s1">&#39;Это тест.&#39;</span><span class="p">;</span>
+<span class="nv">$first</span> <span class="o">=</span> <span class="nv">$str</span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+
+<span class="c1">// Получение третьего символа строки</span>
+<span class="nv">$third</span> <span class="o">=</span> <span class="nv">$str</span><span class="p">{</span><span class="mi">2</span><span class="p">};</span>
+
+<span class="c1">// Получение последнего символа строки</span>
+<span class="nv">$str</span> <span class="o">=</span> <span class="s1">&#39;Это все еще тест.&#39;</span><span class="p">;</span>
+<span class="nv">$last</span> <span class="o">=</span> <span class="nv">$str</span><span class="p">{</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$str</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">};</span>
+
+<span class="c1">// Изменение последнего символа строки</span>
+<span class="nv">$str</span> <span class="o">=</span> <span class="s1">&#39;Посмотри на море&#39;</span><span class="p">;</span>
+<span class="nv">$str</span><span class="p">{</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$str</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">}</span> <span class="o">=</span> <span class="s1">&#39;я&#39;</span><span class="p">;</span>
+
+<span class="cp">?&gt;</span>
+</pre></div>
+
+
+<h4 id="heredoc-">Heredoc-синтаксис</h4>
+<p>Другой способ определения строк - это использование heredoc-синтаксиса ("&lt;&lt;&lt;"). После &lt;&lt;&lt; необходимо указать идентификатор, затем идет строка, а потом этот же идентификатор, закрывающий вставку.</p>
+<p>Внимание! Очень важно отметить, что строка с закрывающим идентификатором не содержит других символов, за исключением, возможно, точки с запятой (;). Это означает, что идентификатор не должен вводиться с отступом и что не может быть никаких пробелов или знаков табуляции до или после точки с запятой. Важно также понимать, что первым символом перед закрывающим идентификатором должен быть символ новой строки, определенный в вашей операционной системе. Например, на Windows® это \r.</p>
+<p>Если это правило нарушено и закрывающий идентификатор не является "чистым", считается, что закрывающий идентификатор отсутствует и PHP продолжит его поиск дальше. Если в этом случае верный закрывающий идентификатор так и не будет найден, то это вызовет ошибку в обработке с номером строки в конце скрипта.</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$str</span> <span class="o">=</span> <span class="s">&lt;&lt;&lt;</span><span class="dl">EOD</span><span class="s"></span>
+<span class="s">Пример строки,</span>
+<span class="s">охватывающей несколько строчек,</span>
+<span class="s">с использованием heredoc-синтаксиса.</span>
+<span class="dl">EOD</span><span class="p">;</span>
+
+<span class="cm">/* Более сложный пример с переменными. */</span>
+<span class="k">class</span> <span class="nc">foo</span>
+<span class="p">{</span>
+     <span class="k">var</span> <span class="nv">$foo</span><span class="p">;</span>
+     <span class="k">var</span> <span class="nv">$bar</span><span class="p">;</span>
+
+     <span class="k">function</span> <span class="nf">foo</span><span class="p">()</span>
+     <span class="p">{</span>
+         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">foo</span> <span class="o">=</span> <span class="s1">&#39;Foo&#39;</span><span class="p">;</span>
+         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">bar</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Bar1&#39;</span><span class="p">,</span> <span class="s1">&#39;Bar2&#39;</span><span class="p">,</span> <span class="s1">&#39;Bar3&#39;</span><span class="p">);</span>
+     <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$foo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">foo</span><span class="p">();</span>
+<span class="nv">$name</span> <span class="o">=</span> <span class="s1">&#39;МоеИмя&#39;</span><span class="p">;</span>
+
+<span class="k">echo</span> <span class="s">&lt;&lt;&lt;</span><span class="dl">EOT</span><span class="s"></span>
+<span class="s">Меня зовут &quot;$name&quot;. Я печатаю $foo-&gt;foo.</span>
+<span class="s">Теперь я вывожу {$foo-&gt;bar[1]}.</span>
+<span class="s">Это должно вывести заглавную букву &#39;A&#39;: \x41</span>
+<span class="dl">EOT</span><span class="p">;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<h3 id="_4">Массивы</h3>
+<p>Существует два типа массивов, различающиеся по способу идентификации элементов.</p>
+<ol>
+<li>
+<p>В массивах первого типа элемент определяется индексом в последовательности. Такие массивы называются простыми массивами.</p>
+</li>
+<li>
+<p>Массивы второго типа имеют ассоциативную природу, и для обращения к элементам используются ключи, логически связанные со значениями. Такие массивы называют ассоциативными массивами.
+https://www.php.net/manual/ru/language.types.php</p>
+</li>
+</ol>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>
